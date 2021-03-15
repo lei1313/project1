@@ -4,7 +4,7 @@ var tied = 0
 var rounds = prompt("How many rounds are you going to play?")
 
 for(i = 1; i <= rounds; i++){
-    var userchoice = prompt(" r, p, or s (rock, paper, or scissors")
+    var userchoice = prompt(" Do you pick rock,paper,sicssor?(enter r,p, or s)")
     var computerChoice = Math.floor(Math.random() * 3)
     if(computerChoice == 0){
         computerChoice = "r"
@@ -35,4 +35,4 @@ for(i = 1; i <= rounds; i++){
         alert("You won!")
     }
 }
-alert("You won " + won + "time(s)." + " You lost " + lost + " time(s). " +"You tied " + tied + " time(s).")
+alert("You won " + won + " time(s)." + " You lost " + lost + " time(s). " +"You tied " + tied + " time(s).")
